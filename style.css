@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+input, button {
+    margin: 10px 0px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 0px 5px;
+}
+.modal.invalid {
+    position: static;
+    background-color: transparent;
+    color: red;
+    text-align: center;
+}
+.modal.show {
+    display: block;
+    animation: fade .5s forwards;
+}
+.modal_dialog {
+    position: relative;
+    width: auto;
+    max-width: fit-content;
+    margin: 50px auto;
+}
+.modal_content {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.modal_content .modal_header {
+    padding: 30px 50px;
+}      
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.672);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin: 200px auto auto auto;
+    background-color: #d3d3d3;
+    padding: 30px;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    } 50% {
+        opacity: 1;
+        transform: scale(1.1);
+    } 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

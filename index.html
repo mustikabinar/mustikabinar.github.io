@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="Body">
+    <form id="form" name="login">
+        <label for="username">Username</label>
+        <input type="text" id="username">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <button type="submit" data-toggle="modal">Login</button>
+        <div class="modal invalid">invalid username or password</div>
+    </form>   
+
+    <div class="modal success">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <div class="modal_header">Success</div>
+            </div>
+        </div>
+    </div>
+    <script src="myscript.js"></script>
+</body>
+</html>
